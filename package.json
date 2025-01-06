@@ -1,14 +1,10 @@
 {
-  "name": "Sologid",
+  "name": "sologid",
   "type": "module",
   "version": "1.0.2",
   "license": "MIT",
   "description": "A platform that empowers Africa-focused skilled professionals to transform their intellectual capabilities into manufacturing technology startup",
-  "author": {
-    "name": "Larrychill",
-    "email": "lawrence@sologid.com",
-    "url": "https://sologid.com"
-  },
+  "author": "Larrychill <lawrence@sologid.com> (https://sologid.com)",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -33,5 +29,19 @@
   },
   "devDependencies": {
     "@astrojs/react": "^4.1.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Larrychi101/sologid-tech-hub.git..git"
+  },
+  "keywords": [
+    "technology",
+    "startup",
+    "Africa"
+  ],
+  "bugs": {
+    "url": "https://github.com/Larrychi101/sologid-tech-hub.git./issues"
+  },
+  "homepage": "https://github.com/Larrychi101/sologid-tech-hub.git.#readme"
 }

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
@@ -9,6 +8,7 @@ const navbarLinks = [
   { label: "Pricing", href: "/#pricing", ariaLabel: "Pricing" },
   { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
+  { label: "Blog", href: "https://sologid.home.blog/2025/01/04/microsoft-is-finally-making-custom-chips-and-theyre-all-about-ai/", ariaLabel: "Blog" },
 ];
 
 export const Navbar = () => {
@@ -34,7 +34,7 @@ export const Navbar = () => {
             </div>
           </a>
         </motion.div>
-        <div className="flex items-center">
+        <div className="hidden lg:flex items-center">
           {navbarLinks.map(({ label, href, ariaLabel }) => (
             <a
               className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
@@ -63,7 +63,52 @@ export const Navbar = () => {
             </a>
           </div>
         </motion.div>
+        <div className="lg:hidden flex items-center">
+          <button
+            className="text-white focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="w-full lg:hidden flex flex-col items-center bg-bgDark1"
+          >
+            {navbarLinks.map(({ label, href, ariaLabel }) => (
+              <a
+                className="text-white text-xl leading-6 py-2 cursor-pointer font-normal hover:scale-110 transition"
+                href={href}
+                aria-label={ariaLabel}
+                key={label}
+                onClick={() => setIsOpen(false)}
+              >
+                {label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

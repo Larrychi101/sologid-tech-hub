@@ -29,7 +29,7 @@ export const Footer = () => {
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Empowering skilled professionals in Africa to turn their expertise into tech startups. Monetize your passion with our business incubation platform.
+                Empowering skilled professionals in Africa to turn their expertise into tech startups and monetize their passion with our business incubation platform.
                 <a
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
@@ -58,6 +58,9 @@ export const Footer = () => {
                   <LinkedInIcon />
                 </a>
               </div>
+              <p className="mt-4 text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
+                18A Olusegun Aina Street, Parkview Estate, Ikoyi Lagos, Nigeria 101233
+              </p>
             </div>
             <div className="w-full lg:w-2/3 lg:pl-16 hidden lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">

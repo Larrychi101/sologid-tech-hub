@@ -55,7 +55,9 @@ export const Pricing = () => {
                 Choose your best plan
               </h2>
               <p className="mb-6 text-secondaryText">
-              Select the plan that suits your needs and benefit from our incubator-as-a-service platform. Turn your passion into a thriving IoT startup with our support, resources, and hardware. Whether you're starting out or ready to scale, we have the perfect plan for you
+              Select the plan that suits your needs and benefit from our incubator-as-a-service platform. Turn your passion into a thriving IoT startup with our support, resources, and hardware. Whether you're starting out or ready to scale, we have the perfect plan for you.
+
+We highly recommend all users to go through our onboarding process by clicking the Get Started button at the top of the website. This guided onboarding is available at zero cost and will help you get the most out of our platform. However, if that process doesn't fit your current pace, you can go ahead and pick a plan below:
               </p>
               <label className="mx-auto bg-bgDark3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input

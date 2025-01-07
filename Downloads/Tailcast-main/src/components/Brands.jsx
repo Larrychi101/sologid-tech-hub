@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import { MicrosoftLogo } from "../assets/logos/MicrosoftLogo";
-import { NvidiaLogo } from "../assets/logos/NvidiaLogo";
 
 export const Brands = () => (
   <section className="py-12 sm:py-24 bg-bgDark1 w-full  lg:mt-16 mb-8 lg:mb-16">
@@ -27,9 +26,6 @@ export const Brands = () => (
             <div className="flex flex-wrap -m-4">
               <div className="w-1/2 sm:w-1/3  py-6 flex  justify-center">
                 <MicrosoftLogo />
-              </div>
-              <div className="w-1/2 sm:w-1/3  py-6 flex  justify-center">
-                <NvidiaLogo />
               </div>
             </div>
           </div>

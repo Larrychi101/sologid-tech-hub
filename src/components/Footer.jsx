@@ -4,15 +4,24 @@ import { LinkedInIcon } from "../assets/icons/LinkedinIcon";
 const footerData = [
   {
     title: "Products",
-    items: ["Services", "News and Stories"],
+    items: [
+      { name: "Services", link: "#features-diagonal" }, // Link to the FeaturesDiagonal section
+      { name: "News and Stories", link: "https://sologid.home.blog/2025/01/04/microsoft-is-finally-making-custom-chips-and-theyre-all-about-ai" },
+    ],
   },
   {
     title: "Important Links",
-    items: ["Organization Team", "Privacy Policy"],
+    items: [
+      { name: "Organization Team", link: "/organization-team" },
+      { name: "Privacy Policy", link: "#" },
+    ],
   },
   {
     title: "Company",
-    items: ["About Us", "Contact Us"],
+    items: [
+      { name: "About Us", link: "#features" }, // Link to the Features1 section
+      { name: "Contact Us", link: "https://www.linkedin.com/company/sologid-technology-hub" },
+    ],
   },
 ];
 
@@ -67,13 +76,13 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">Products</h3>
                 <ul>
                   {footerData[0].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.link}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
@@ -85,13 +94,13 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   {footerData[1].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.link}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
@@ -101,13 +110,13 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">Company</h3>
                 <ul>
                   {footerData[2].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.link}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}

@@ -6,6 +6,9 @@ import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
 
+import { Footer } from "../components/Footer.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+
 export interface Props {
   title: string;
 }
@@ -27,9 +30,13 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-bgDark2">
+    <Navbar client:load />
+    <!-- Include the Navbar component -->
     <main aria-label="Main content">
       <slot />
     </main>
+    <Footer />
+    <!-- Include the Footer component -->
     <style is:global>
       html {
         font-family: Inter;

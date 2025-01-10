@@ -36,7 +36,7 @@ export const Features3 = () => (
             <ul className="mb-6 text-primaryText">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>SDG 1: No Poverty</span>
+                <span>SDG 1: Reducing Poverty</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />

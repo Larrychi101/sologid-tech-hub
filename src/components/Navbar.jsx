@@ -106,12 +106,32 @@ export const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="w-full lg:hidden flex flex-col items-center bg-bgDark1"
+            className="fixed top-0 right-0 w-3/4 h-full bg-bgDark1 flex flex-col items-center z-50"
           >
+            <button
+              className="text-white focus:outline-none self-end m-4"
+              onClick={() => setIsOpen(false)}
+              aria-label="Close navigation"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
             {navbarLinks.map(({ label, href, ariaLabel }) => (
               <a
                 className="text-white text-xl leading-6 py-2 cursor-pointer font-normal hover:scale-110 transition"

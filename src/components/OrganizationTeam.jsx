@@ -1,42 +1,38 @@
 import React from 'react';
-import team1 from '../assets/images/team1.jpg';
-import team2 from '../assets/images/team2.jpg';
-import team3 from '../assets/images/team3.jpg';
-import team4 from '../assets/images/team4.jpg';
 
 const teamMembers = [
   {
     name: 'Lawrence Chiagozie',
     role: 'Founder/CTO',
-    image: team1,
+    image: '/assets/images/team1.jpg', // Absolute path
     description: 'Lawrence is an experienced Azure DevOps engineer with a strong background in cloud and edge computing. His expertise drives our technological innovations and strategic direction',
     linkedin: 'https://www.linkedin.com/in/lawrence-chiagozie-450435189/',
   },
   {
     name: 'Emmanuel Adebayo',
     role: 'COO',
-    image: team2,
+    image: '/assets/images/team2.jpg', // Absolute path
     description: 'Emmanuel is a seasoned support engineer specializing in Microsoft Azure. His operational excellence ensures our services run smoothly and efficiently',
     linkedin: 'https://www.linkedin.com/in/emmanuel-adebayo-cloud-doc/',
   },
   {
     name: 'Christopher Adebayo',
     role: 'Brand identity designer',
-    image: team3,
+    image: '/assets/images/team3.jpg', // Absolute path
     description: 'Christopher is a creative force with extensive experience in the Adobe tech stack. He crafts compelling brand identities that resonate with our audience and elevate our visual presence',
     linkedin: 'https://www.linkedin.com/in/christopher-adebayo-979514247/',
   },
   {
     name: 'Uzoma Ngbugba',
     role: 'Content creator',
-    image: team4,
+    image: '/assets/images/team4.jpg', // Absolute path
     description: 'Uzoma is a talented content creator with a knack for podcasting and brand storytelling. His engaging content brings our brands story to life and connects with our community',
     linkedin: 'https://www.linkedin.com/in/uzoma-corinthians-94326429a/',
   },
 ];
 
 const OrganizationTeamComponent = () => (
-  <div className="container mx-auto px-4 py-16 bg-bgDark1">
+  <div className="container mx-auto px-4 py-32 bg-bgDark1"> {/* Increased top padding */}
     <h1 className="text-4xl font-bold text-center mb-12 text-white">Meet Our Team</h1>
     <div className="flex flex-wrap justify-center">
       {teamMembers.map((member, index) => (

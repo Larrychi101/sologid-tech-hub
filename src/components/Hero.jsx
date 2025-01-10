@@ -41,7 +41,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          We are an Ai company empowering Africa-focused skilled professionals with cutting-edge technologies to unlock new revenue generation models
+          We are an Ai company empowering Africa-focused skilled professionals with cutting-edge research and development technologies to unlock new revenue generation models
           </h2>
         </motion.div>
         <motion.div

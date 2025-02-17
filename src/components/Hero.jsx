@@ -31,7 +31,7 @@ export const Hero = () => {
             <h1 className="inline md:hidden">Ai of Things</h1>
             <h1 className="hidden md:inline">Ai of Things</h1>
           </div>
-          <h1 className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-20 md:px-24 lg:px-24">
+          <h1 className="mt-2 sm:mt-2 Stext-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-20 md:px-24 lg:px-24">
             Startup
           </h1>
         </motion.div>
@@ -41,7 +41,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          We are an Ai company empowering Africa-focused skilled professionals with cutting-edge research and development technologies to unlock new revenue generation models
+          We are an Ai innovation hub that's empowering Africa-focused skilled professionals with cutting-edge research and development technologies to unlock new revenue generation models
           </h2>
         </motion.div>
         <motion.div

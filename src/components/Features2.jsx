@@ -31,7 +31,7 @@ export const Features2 = () => (
               The Challenge We Aim to Address
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              As the world transitions to artificial intelligence and smart devices, the demand for semiconductors and microchips is outpacing supply. This technological shift has created a global surge in demand for electronic design automation engineers. The world is increasingly focusing on this sector, and Africa is just beginning to enter this critical phase. The potential for Africa to play a crucial role in meeting this demand is immense, and unlocking this potential is essential for the future of technology
+              With the global transitioning into quantum computing, artificial intelligence and smart devices, the demand for topoconductors, semiconductors and microchips is outpacing supply. This technological shift has created a global surge in demand for electronic design automation engineers. The world is increasingly focusing on this sector and Africa is just beginning to enter this critical phase. The potential for Africa to play a crucial role in meeting this demand is immense, and unlocking this potential is essential for the future of technology
             </p>
             <ul className="mb-6 text-primaryText">
               <li className="mb-4 flex">

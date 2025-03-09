@@ -27,7 +27,7 @@ export const Features1 = () => {
               </h2>
               <p className="mb-10 text-secondaryText leading-loose">
                 
-In partnership with Microsoft as an ISV, we've developed a business incubation platform-as-a-service that empowers Africa-focused professionals to create AIOT startups. Our solution enables individuals to monetize their skills in real-time, allowing them to live happier, more purposeful lives while doing what they love
+In partnership with Microsoft as an ISV, we've developed a business incubation platform-as-a-service that empowers Africa-focused professionals to create AIOT startups with their intellectual capabilities. Our solution enables individuals to monetize their skills in real-time, allowing them to live happier and more purposeful lives while doing what they love
               </p>
               <ul className="mb-6 text-primaryText">
                 <li className="mb-4 flex">
@@ -40,7 +40,7 @@ In partnership with Microsoft as an ISV, we've developed a business incubation p
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Focus on Passion</span>
+                  <span>Focus on Capabilities</span>
                 </li>
               </ul>
             </div>

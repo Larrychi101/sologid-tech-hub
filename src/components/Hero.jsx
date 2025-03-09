@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-20  font-bold">
-            Transform Your Passion into 
+            Transform Your Capabilities into 
           </h3>
         </motion.div>
         <motion.div
@@ -41,7 +41,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          We are an Ai innovation hub that's empowering Africa-focused skilled professionals with cutting-edge research and development technologies to unlock new revenue generation models
+          We are Quantum-powered innovation hub that's empowering Africa-focused skilled professionals with cutting-edge research and development technologies to unlock new revenue generation models
           </h2>
         </motion.div>
         <motion.div

@@ -4,28 +4,28 @@ const teamMembers = [
   {
     name: 'Lawrence Chiagozie',
     role: 'Founder/CTO',
-    image: '/assets/images/team1.jpg', // Absolute path
+    image: '/images/team1.jpg', // Updated path
     description: 'Lawrence is an experienced Azure DevOps engineer with a strong background in cloud and edge computing. His expertise drives our technological innovations and strategic direction',
     linkedin: 'https://www.linkedin.com/in/lawrence-chiagozie-450435189/',
   },
   {
     name: 'Emmanuel Adebayo',
     role: 'COO',
-    image: '/assets/images/team2.jpg', // Absolute path
+    image: '/images/team2.jpg', // Updated path
     description: 'Emmanuel is a seasoned support engineer specializing in Microsoft Azure. His operational excellence ensures our services run smoothly and efficiently',
     linkedin: 'https://www.linkedin.com/in/emmanuel-adebayo-cloud-doc/',
   },
   {
     name: 'Christopher Adebayo',
     role: 'Brand identity designer',
-    image: '/assets/images/team3.jpg', // Absolute path
+    image: '/images/team3.jpg', // Updated path
     description: 'Christopher is a creative force with extensive experience in the Adobe tech stack. He crafts compelling brand identities that resonate with our audience and elevate our visual presence',
     linkedin: 'https://www.linkedin.com/in/christopher-adebayo-979514247/',
   },
   {
     name: 'Uzoma Ngbugba',
     role: 'Content creator',
-    image: '/assets/images/team4.jpg', // Absolute path
+    image: '/images/team4.jpg', // Updated path
     description: 'Uzoma is a talented content creator with a knack for podcasting and brand storytelling. His engaging content brings our brands story to life and connects with our community',
     linkedin: 'https://www.linkedin.com/in/uzoma-corinthians-94326429a/',
   },

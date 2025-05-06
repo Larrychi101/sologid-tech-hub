@@ -23,7 +23,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/christopher-adebayo-979514247/',
   },
   {
-    name: 'Uzoma Ngbugba',
+    name: 'Uzoma Mgbugba',
     role: 'Content creator',
     image: '/images/team4.jpg', // Updated path
     description: 'Uzoma is a talented content creator with a knack for podcasting and brand storytelling. His engaging content brings our brands story to life and connects with our community',

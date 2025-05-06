@@ -31,7 +31,7 @@ export const Features3 = () => (
               Our Mission and Goals
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Our objective is to contribute to the Sustainable Development Goals by reducing poverty in all its forms (SDG 1), promoting lifelong learning opportunities and access to quality education (SDG 4), serving as a talent incubator for bespoke AI hardware and semiconductor chip designs in and for Africa (SDG 8), and building resilient infrastructure, promoting inclusive and sustainable industrialization, and fostering innovation (SDG 9). Through our platform, we empower skilled professionals to transform their intellectual capabilities into thriving technology startups, driving economic growth, technological advancement, and educational development across the continent.
+              Our objective is to contribute to the Sustainable Development Goals for reducing poverty in all its forms (SDG 1), promoting lifelong learning opportunities and access to quality education (SDG 4), serving as a talent incubator for bespoke AI hardware and semiconductor chip designs in and for Africa (SDG 8) and building resilient infrastructure, promoting inclusive and sustainable industrialization, and fostering innovation (SDG 9). Through our platform, we empower skilled professionals to transform their intellectual capabilities into thriving technology startups, driving economic growth, technological advancement, and educational development across the continent
             </p>
             <ul className="mb-6 text-primaryText">
               <li className="mb-4 flex">

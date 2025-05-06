@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-20  font-bold">
-            Transform Your Capabilities into 
+            Transform Your STEM Capabilities into 
           </h3>
         </motion.div>
         <motion.div
@@ -28,8 +28,8 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.05 }}
         >
           <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-8 md:px-20 lg:px-4">
-            <h1 className="inline md:hidden">AI & IOT</h1>
-            <h1 className="hidden md:inline">AI & IOT</h1>
+            <h1 className="inline md:hidden">AI & IoT-Powered</h1>
+            <h1 className="hidden md:inline">AI & IoT-Powered</h1>
           </div>
           <h1 className="mt-2 sm:mt-2 Stext-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-20 md:px-24 lg:px-24">
             Startup
@@ -41,7 +41,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          We are a next-gen digital innovation hub empowering Africa-focused professionals and startups with smart technologies and resources to unlock new revenue streams and drive sustainable growth
+          We are a next-gen digital innovation hub empowering Africa-focused STEM professionals and startups with smart technologies and tailored resources to unlock new revenue streams and drive sustainable growth
           </h2>
         </motion.div>
         <motion.div

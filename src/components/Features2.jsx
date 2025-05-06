@@ -31,7 +31,7 @@ export const Features2 = () => (
               The Challenge We Aim to Address
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              With the global transitioning into quantum computing, artificial intelligence and smart devices, the demand for topoconductors, semiconductors and microchips is outpacing supply. This technological shift has created a global surge in demand for electronic design automation engineers. The world is increasingly focusing on this sector and Africa is just beginning to enter this critical phase. The potential for Africa to play a crucial role in meeting this demand is immense, and unlocking this potential is essential for the future of technology
+            As the world rapidly advances into the era of quantum computing, AI and intelligent systems, the global demand for semiconductors, microchips and topoconductors is exceeding supply. This shift is driving an urgent need for Electronic Design Automation (EDA) talent and infrastructure. We recognize that while the world is scaling fast, Africa is only just stepping into this critical frontier. The continent holds untapped potential to contribute meaningfully to this global demand. Our mission is to activate that potential, by equipping African innovators with the tools, training and digital infrastructure needed to compete and thrive in the future of tech
             </p>
             <ul className="mb-6 text-primaryText">
               <li className="mb-4 flex">

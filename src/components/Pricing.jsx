@@ -19,7 +19,7 @@ const igniteData = [
 ];
 
 const accelerateData = [
-  "All Ignite benefits",
+  "All Build benefits",
   "Additional hardware for manufacturing",
   "Business development strategies",
   "Priority funding access",
@@ -116,7 +116,7 @@ We highly recommend all users to begin with our onboarding process by clicking t
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="px-8 py-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-left">
-                    Ignite
+                    Build
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
@@ -149,7 +149,7 @@ We highly recommend all users to begin with our onboarding process by clicking t
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Accelerate
+                    Scale
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">

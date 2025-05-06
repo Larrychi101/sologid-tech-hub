@@ -38,7 +38,7 @@ const FAQData = [
       " Our Accelerate plan includes dedicated consulting sessions and business development strategies to help you transition into a global IoT consultant, serving the needs of international companies",
   },
   {
-    question: " What is the Elevate plan and what does it offer?",
+    question: " What is the Thrive plan and what does it offer?",
     answer:
       " The Elevate plan automatically funds all subscribers between $15,000 - $75,000 USD through a Simple Agreement for Future Equity (SAFE), subject to terms and conditions. This plan is designed to give you the financial boost needed to accelerate your startup's growth",
   },

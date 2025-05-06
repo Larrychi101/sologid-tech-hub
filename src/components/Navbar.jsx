@@ -9,8 +9,7 @@ const navbarLinks = [
   { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
   { label: "Blog", href: "https://sologid.home.blog/2025/01/04/microsoft-is-finally-making-custom-chips-and-theyre-all-about-ai/", ariaLabel: "Blog" },
-  { label: "Project", href: "https://forms.microsoft.com/r/igCYPivBv0", ariaLabel: "Program/Project" }, // New Program/Project link
-  { label: "Privacy Policy", href: "/policy", ariaLabel: "Privacy Policy" }, // Added Privacy Policy link
+  { label: "Project", href: "https://forms.microsoft.com/r/igCYPivBv0", ariaLabel: "Program/Project" },
 ];
 
 export const Navbar = () => {

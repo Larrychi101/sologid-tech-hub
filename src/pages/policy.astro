@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro"; // Update if using a custom layout
+---
+
+<Layout title="Privacy Policy">
+  <section class="policy">
+    <h1 class="policy-title">Privacy Policy</h1>
+    <p class="policy-date">Effective Date: April 29, 2019</p>
+
+    <p class="policy-intro">
+      At Sologid Hub, we are committed to protecting your privacy. This policy
+      outlines how we collect, use, and safeguard your data when you use our
+      services or interact with our platform.
+    </p>
+
+    <h2 class="policy-heading">Information We Collect</h2>
+    <ul class="policy-list">
+      <li>
+        Personal information (e.g., name, email) when you register or contact
+        us.
+      </li>
+      <li>
+        Usage data such as pages visited, interaction with tools, and time
+        spent.
+      </li>
+      <li>
+        Technical information such as browser type, device, and IP address.
+      </li>
+    </ul>
+
+    <h2 class="policy-heading">How We Use Your Data</h2>
+    <ul class="policy-list">
+      <li>To improve our services and personalize your experience.</li>
+      <li>To communicate updates, offers, or relevant insights.</li>
+      <li>To maintain security and comply with legal obligations.</li>
+    </ul>
+
+    <h2 class="policy-heading">Third-Party Services</h2>
+    <p class="policy-text">
+      We may use third-party tools (like Microsoft Azure services) to store,
+      process, or analyze data. These tools comply with strict security and
+      privacy practices.
+    </p>
+
+    <h2 class="policy-heading">Your Choices</h2>
+    <p class="policy-text">
+      You have the right to access, modify, or delete your data. Contact us at
+      <a href="mailto:support@sologid.com" class="policy-link"
+        >support@sologid.com</a
+      > for any requests or questions.
+    </p>
+
+    <p class="policy-text">
+      Thank you for trusting Sologid. We are building with integrity and care.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --primary-color: #0078d4;
+    --text-color: #1a1a1a;
+    --background-color: #f9f9f9;
+    --font-family: "Inter", system-ui, sans-serif;
+    --max-width: 800px;
+    --line-height: 1.6;
+    --heading-font-size: 1.5rem;
+    --paragraph-font-size: 1rem;
+    --spacing: 1.5rem;
+    --nav-height: 60px; /* Adjust this to match your navigation bar height */
+  }
+
+  .policy {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--spacing) + var(--nav-height)) var(--spacing); /* Add space for the nav bar */
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    color: var(--text-color);
+  }
+
+  .policy-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing);
+    color: var(--primary-color);
+    text-align: center;
+    word-wrap: break-word; /* Ensures long words break properly */
+    overflow-wrap: break-word;
+    max-width: 100%; /* Prevents overflow */
+    padding: 0 1rem; /* Adds padding for smaller screens */
+  }
+
+  .policy-date {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: var(--spacing);
+  }
+
+  .policy-intro {
+    font-size: var(--paragraph-font-size);
+    margin-bottom: var(--spacing);
+    text-align: justify;
+  }
+
+  .policy-heading {
+    font-size: var(--heading-font-size);
+    margin-top: var(--spacing);
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .policy-list {
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing);
+  }
+
+  .policy-text {
+    font-size: var(--paragraph-font-size);
+    margin-bottom: var(--spacing);
+    text-align: justify;
+  }
+
+  .policy-link {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .policy-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .policy-title {
+      font-size: 1.8rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .policy {
+      padding: calc(var(--spacing) + var(--nav-height)) 1rem; /* Add horizontal padding for smaller screens */
+    }
+  }
+</style>

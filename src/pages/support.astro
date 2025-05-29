@@ -1,0 +1,164 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Support">
+  <section class="support">
+    <h1 class="support-title">Support Center</h1>
+    <p class="support-date">Last Updated: May 5, 2025</p>
+
+    <p class="support-intro">
+      Welcome to the Sologid Support Center. We are dedicated to providing you
+      with the assistance you need to succeed. Below, you’ll find resources and
+      contact options to address your concerns.
+    </p>
+
+    <h2 class="support-heading">How Can We Assist You?</h2>
+    <ul class="support-list">
+      <li>
+        <strong>Technical Support:</strong> Facing technical issues? Email us at
+        <a href="mailto:lawrence@sologid.com" class="support-link"
+          >support@sologid.com</a
+        >.
+      </li>
+      <li>
+        <strong>Sales & Billing:</strong> For inquiries about pricing, partnerships,
+        or billing, contact
+        <a href="mailto:lawrence@sologid.com" class="support-link"
+          >sales@sologid.com</a
+        >.
+      </li>
+      <li>
+        <strong>Platform Help:</strong> Visit our <a
+          href="https://learn.microsoft.com/en-us/credentials/browse/"
+          class="support-link">Learning Center</a
+        > for tutorials and documentation.
+      </li>
+      <li>
+        <strong>Advisory Sessions:</strong> Book a 1:1 session with our experts <a
+          href="https://outlook.office365.com/owa/calendar/DedicatedAdvisorySession@sologid.com/bookings/"
+          class="support-link">here</a
+        >.
+      </li>
+    </ul>
+
+    <h2 class="support-heading">Join Our Community</h2>
+    <p class="support-community">
+      Connect with like-minded professionals, share insights, and get support
+      from our vibrant community:
+    </p>
+    <ul class="community-list">
+      <li>
+        <a href="https://community.sologid.com" class="community-link"
+          >Visit the Sologid Community Forum</a
+        >
+      </li>
+      <li>
+        <a href="https://discord.gg/sologid" class="community-link"
+          >Join our Discord Server</a
+        >
+      </li>
+    </ul>
+
+    <p class="support-footer">
+      Need immediate assistance? Don’t hesitate to reach out to us. We’re here
+      to help you every step of the way.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --primary-color: #0078d4;
+    --text-color: #1a1a1a;
+    --background-color: #f9f9f9;
+    --font-family: "Inter", system-ui, sans-serif;
+    --max-width: 800px;
+    --line-height: 1.6;
+    --heading-font-size: 1.5rem;
+    --paragraph-font-size: 1rem;
+    --spacing: 1.5rem;
+    --nav-height: 60px;
+  }
+
+  .support {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--spacing) + var(--nav-height)) var(--spacing);
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    color: var(--text-color);
+  }
+
+  .support-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing);
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .support-date {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: var(--spacing);
+  }
+
+  .support-intro {
+    font-size: var(--paragraph-font-size);
+    margin-bottom: var(--spacing);
+    text-align: justify;
+  }
+
+  .support-heading {
+    font-size: var(--heading-font-size);
+    margin-top: var(--spacing);
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .support-list {
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing);
+  }
+
+  .support-community {
+    font-size: var(--paragraph-font-size);
+    margin-bottom: var(--spacing);
+    text-align: justify;
+  }
+
+  .community-list {
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing);
+  }
+
+  .support-footer {
+    font-size: var(--paragraph-font-size);
+    margin-top: var(--spacing);
+    text-align: justify;
+  }
+
+  .support-link,
+  .community-link {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .support-link:hover,
+  .community-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .support-title {
+      font-size: 1.8rem;
+    }
+
+    .support {
+      padding: calc(var(--spacing) + var(--nav-height)) 1rem;
+    }
+  }
+</style>

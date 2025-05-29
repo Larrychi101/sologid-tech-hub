@@ -1,0 +1,53 @@
+{
+  "name": "sologid",
+  "type": "module",
+  "version": "1.0.2",
+  "license": "MIT",
+  "description": "A platform that empowers Africa-focused skilled professionals to transform their intellectual capabilities into manufacturing technology startup",
+  "author": "Larrychill <lawrence@sologid.com> (https://sologid.com)",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && cp -r dist/* . && git add . && git commit -m 'Deploy to GitHub Pages' && git push origin main"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@azure/static-web-apps-cli": "^2.0.2",
+    "@fontsource/inter": "^5.0.18",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "framer-motion": "^11.2.10",
+    "npm": "^10.8.1",
+    "npm-check-updates": "^16.14.20",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icon": "^1.0.0",
+    "react-router-dom": "^7.1.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^4.1.2",
+    "astro": "^5.7.10",
+    "gh-pages": "^6.3.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Larrychi101/sologid-tech-hub.git"
+  },
+  "keywords": [
+    "technology",
+    "startup",
+    "Africa"
+  ],
+  "bugs": {
+    "url": "https://github.com/Larrychi101/sologid-tech-hub/issues"
+  },
+  "homepage": "https://larrychi101.github.io/sologid-tech-hub"
+}

@@ -6,7 +6,7 @@ export function VoiceWidget() {
 
   return (
     <div
-      className="fixed bottom-24 right-8 z-50" // Increased bottom spacing
+      className="fixed bottom-24 right-4 z-50" // Adjusted right spacing for better fit
     >
       {!open && (
         <button

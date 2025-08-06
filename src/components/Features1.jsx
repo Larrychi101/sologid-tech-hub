@@ -22,14 +22,20 @@ export const Features1 = () => {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="block-subtitle"></span>
-              <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+              <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title text-white font-extrabold tracking-tight drop-shadow-xl">
                 About Our Innovation Hub
               </h2>
-              <p className="mb-10 text-secondaryText leading-loose">
-                
-In partnership with Microsoft as an ISV, we've developed a business incubation platform-as-a-service that empowers Africa-focused professionals to create AIOT startups with their intellectual capabilities. Our solution enables professionals to monetize their skills in real-time, allowing them to live happier and more purposeful lives while doing what they love
+              <p className="mb-10 text-white leading-loose font-medium">
+                In partnership with Microsoft as a software development company,
+                we've built a business incubation platform-as-a-service that
+                empowers Africa-focused professionals to create Artificial
+                Intelligence Of Things startups with their intellectual
+                capabilities. Our solution enables professionals to monetize their
+                skills in real-time, allowing them to focus on improving their
+                skills, live happier and more purposeful lives while doing what
+                they love
               </p>
-              <ul className="mb-6 text-primaryText">
+              <ul className="mb-6 text-[#2CB67D] font-semibold">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
                   <span>Real-Time Monetization</span>

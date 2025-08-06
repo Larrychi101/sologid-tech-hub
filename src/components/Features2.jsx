@@ -26,14 +26,24 @@ export const Features2 = () => (
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="block-subtitle"> </span>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+            <span className="block-subtitle"></span>
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title text-white font-extrabold tracking-tight drop-shadow-xl">
               The Challenge We Aim to Address
             </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-            As the world rapidly advances into the era of quantum computing, AI and intelligent systems, the global demand for semiconductors, microchips and topoconductors is exceeding supply. This shift is driving an urgent need for Electronic Design Automation (EDA) talent and infrastructure. We recognize that while the world is scaling fast, Africa is only just stepping into this critical frontier. The continent holds untapped potential to contribute meaningfully to this global demand. Our mission is to activate that potential, by equipping African innovators with the tools, training and digital infrastructure needed to compete and thrive in the future of tech
+            <p className="mb-12 text-white leading-loose font-medium">
+              As the world rapidly advances into the era of quantum computing, AI
+              and intelligent systems, the global demand for semiconductors,
+              microchips and topoconductors is exceeding supply. This shift is
+              driving an urgent need for Electronic Design Automation (EDA),
+              Artificial intelligence, internet of things and Digital twins talent
+              and infrastructure. We recognize that while the world is scaling
+              fast, Africa is only just stepping into this critical frontier. The
+              continent holds untapped potential to contribute meaningfully to
+              this global demand. Our mission is to activate that potential, by
+              equipping African innovators with the tools, training and digital
+              infrastructure needed to compete and thrive in the future of tech
             </p>
-            <ul className="mb-6 text-primaryText">
+            <ul className="mb-6 text-[#2CB67D] font-semibold">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
                 <span>Unmet Global Demand</span>

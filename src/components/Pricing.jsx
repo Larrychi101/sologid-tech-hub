@@ -50,14 +50,16 @@ export const Pricing = () => {
         >
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
-              <span className="block-subtitle">Find Your Perfect Fit</span>
-              <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-primaryText">
+              <span className="block-subtitle text-[#7F5AF0] font-semibold">
+                Find Your Perfect Fit
+              </span>
+              <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-extrabold tracking-tight text-white drop-shadow-xl">
                 Choose your best plan
               </h2>
-              <p className="mb-6 text-secondaryText">
-              Pick the plan that meets your needs and take advantage of our incubator-as-a-service platform. With our support, resources, and hardware, you can turn your passion into a successful IoT startup. Whether you're just beginning or ready to grow, we have the right plan for you.
-
-We highly recommend all users to begin with our onboarding process by clicking the Get Started button at the top of the website. This guided onboarding is available at no cost and will help you maximize the benefits of our platform. However, if this process doesn't align with your current pace, feel free to choose a plan from the options below
+              <p className="mb-6 text-white font-medium">
+                Pick the plan that meets your needs and take advantage of our incubator-as-a-service platform. With our support, resources, and hardware, you can turn your passion into a successful IoT startup. Whether you're just beginning or ready to grow, we have the right plan for you.
+                <br /><br />
+                We highly recommend all users to begin with our onboarding process by clicking the Get Started button at the top of the website. This guided onboarding is available at no cost and will help you maximize the benefits of our platform. However, if this process doesn't align with your current pace, feel free to choose a plan from the options below.
               </p>
               <label className="mx-auto bg-bgDark3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -66,8 +68,8 @@ We highly recommend all users to begin with our onboarding process by clicking t
                   checked={!isMonthly}
                   onChange={handleChange}
                 />
-                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-bgDark3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-primaryColor   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
-                <div className="flex absolute text-primaryText text-sm font-bold">
+                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-bgDark3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-[#7F5AF0]   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+                <div className="flex absolute text-white text-sm font-bold">
                   <div
                     className={
                       isMonthly ? "mr-9 ml-3" : "mr-9 ml-3 text-gray-400"

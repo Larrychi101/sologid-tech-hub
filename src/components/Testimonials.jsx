@@ -29,35 +29,41 @@ export const Testimonials = () => (
     <div className="absolute -top-16" id="feedback" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
       >
-        <div className="block-subtitle text-center mb-6">Testimonials</div>
-        <div className="block-big-title text-center mb-20 px-8 sm:px-24 md:px-48">
+        <div className="block-subtitle text-center mb-6 text-[#7F5AF0] font-semibold">
+          Testimonials
+        </div>
+        <div className="block-big-title text-center mb-20 px-8 sm:px-24 md:px-48 text-white font-extrabold tracking-tight drop-shadow-xl">
           People like you love Sologid hub
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {testimonialsData.map((testimonial, index) => (
-            <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4"
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 + index * 0.15, ease: "easeOut" }}
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4 shadow-lg hover:shadow-2xl transition-all duration-300"
               key={`${testimonial.customerName}-${index}`}
             >
               <div className="flex mb-2">
                 <QuoteIcon />
               </div>
-              <div className="content-text-white">"{testimonial.content}"</div>
+              <div className="content-text-white text-lg font-medium mb-2">"{testimonial.content}"</div>
               <div className="flex flex-col mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <div className="content-text-white font-medium">
+                <div className="content-text-white font-bold text-[#2CB67D]">
                   {testimonial.customerName}
                 </div>
-                <div className="content-text-gray">
+                <div className="content-text-gray font-medium">
                   {testimonial.customerTitle}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>

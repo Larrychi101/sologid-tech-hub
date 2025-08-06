@@ -26,14 +26,24 @@ export const Features3 = () => (
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="block-subtitle"> </span>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+            <span className="block-subtitle"></span>
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title text-white font-extrabold tracking-tight drop-shadow-xl">
               Our Mission and Goals
             </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-              Our objective is to contribute to the Sustainable Development Goals for reducing poverty in all its forms (SDG 1), promoting lifelong learning opportunities and access to quality education (SDG 4), serving as a talent incubator for bespoke AI hardware and semiconductor chip designs in and for Africa (SDG 8) and building resilient infrastructure, promoting inclusive and sustainable industrialization, and fostering innovation (SDG 9). Through our platform, we empower skilled professionals to transform their intellectual capabilities into thriving technology startups, driving economic growth, technological advancement, and educational development across the continent
+            <p className="mb-12 text-white leading-loose font-medium">
+              Our objective is to contribute to the Sustainable Development Goals
+              for reducing poverty in all its forms (SDG 1), promoting lifelong
+              learning opportunities and access to quality education (SDG 4),
+              serving as a talent incubator for bespoke AI hardware and
+              semiconductor chip designs in and for Africa (SDG 8) and building
+              resilient infrastructure, promoting inclusive and sustainable
+              industrialization, and fostering innovation (SDG 9). Through our
+              platform, we empower skilled professionals to transform their
+              intellectual capabilities into thriving technology startups, driving
+              economic growth, technological advancement, and educational
+              development across the continent
             </p>
-            <ul className="mb-6 text-primaryText">
+            <ul className="mb-6 text-[#2CB67D] font-semibold">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
                 <span>SDG 1: Reducing Poverty</span>

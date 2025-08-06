@@ -22,14 +22,13 @@ export const Navbar = () => {
     >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <a href="/#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white font-['Inter'] font-bold text-xl">
+              <div className="text-white font-['Inter'] font-bold text-2xl tracking-tight drop-shadow-xl">
                 SOLOGID
               </div>
             </div>
@@ -38,7 +37,7 @@ export const Navbar = () => {
         <div className="hidden lg:flex items-center">
           {navbarLinks.map(({ label, href, ariaLabel }) => (
             <a
-              className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+              className="text-white lg:text-base text-xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:text-[#7F5AF0] hover:scale-110 transition h-full pt-2"
               href={href}
               aria-label={ariaLabel}
               key={label}
@@ -48,16 +47,16 @@ export const Navbar = () => {
           ))}
         </div>
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a
-              className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+              className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-[#7F5AF0] border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex transition"
               href="https://github.com/Larrychi101/sologid-tech-hub.git"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <GithubIcon />
               Source code
@@ -135,7 +134,7 @@ export const Navbar = () => {
             </button>
             {navbarLinks.map(({ label, href, ariaLabel }) => (
               <a
-                className="text-white text-xl leading-6 py-2 cursor-pointer font-normal hover:scale-110 transition"
+                className="text-white text-xl leading-6 py-2 cursor-pointer font-normal hover:text-[#7F5AF0] hover:scale-110 transition"
                 href={href}
                 aria-label={ariaLabel}
                 key={label}

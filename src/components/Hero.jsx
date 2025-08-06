@@ -53,7 +53,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         >
           <h2 className="text-white text-base lg:text-lg xl:text-xl sm:text-lg mt-10 px-12 sm:px-48 font-medium">
-            We are a next-gen digital innovation hub empowering Africa-focused STEM professionals and startups with smart technologies and tailored resources to unlock new revenue streams and drive sustainable growth
+            We are next-gen digital innovation hub empowering Africa-focused STEM professionals and startups with smart technologies and tailored resources to unlock new revenue streams and drive sustainable growth
           </h2>
         </motion.div>
         <motion.div

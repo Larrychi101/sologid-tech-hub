@@ -3,6 +3,9 @@
 import { useConversation } from '@elevenlabs/react';
 import { useCallback } from 'react';
 
+// Set your deployed worker base URL here
+const WORKER_BASE = import.meta.env.PUBLIC_WORKER_URL || 'https://eleven-proxy.example.workers.dev';
+
 export function Conversation() {
   const conversation = useConversation({
     onConnect: () => console.log('Connected'),
@@ -11,16 +14,34 @@ export function Conversation() {
     onError: (error) => console.error('Error:', error),
   });
 
-
   const startConversation = useCallback(async () => {
     try {
       // Request microphone permission
       await navigator.mediaDevices.getUserMedia({ audio: true });
 
-      // Start the conversation with your agent
-      await conversation.startSession({
-        agentId: import.meta.env.PUBLIC_AGENT_ID
+      // Ask our worker to create/authorize a session with ElevenLabs
+      const res = await fetch(`${WORKER_BASE}/api/eleven-proxy/sessions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ agentId: import.meta.env.PUBLIC_AGENT_ID }),
       });
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`Proxy error ${res.status}: ${errText}`);
+      }
+
+      const payload = await res.json();
+      // payload is forwarded ElevenLabs response. Adjust field names if ElevenLabs returns different structure.
+      // If the SDK needs a sessionToken, pass it here. Otherwise pass returned object as needed by SDK.
+      if (payload && (payload.sessionToken || payload.id || payload.token)) {
+        // Try common token fields
+        const token = payload.sessionToken || payload.token || payload.id;
+        await conversation.startSession({ agentId: import.meta.env.PUBLIC_AGENT_ID, sessionToken: token });
+      } else {
+        // If no token field, attempt to pass full payload
+        await conversation.startSession({ agentId: import.meta.env.PUBLIC_AGENT_ID, sessionData: payload });
+      }
 
     } catch (error) {
       console.error('Failed to start conversation:', error);
@@ -51,14 +72,10 @@ export function Conversation() {
       </div>
 
       <div className="flex flex-col items-center">
-        <p className="text-white transition-all duration-500 ease-in-out">
-          Status: {conversation.status}
-        </p>
+        <p className="text-white transition-all duration-500 ease-in-out">Status: {conversation.status}</p>
         <p
           className={`text-white transition-all duration-500 ease-in-out ${
-            conversation.isSpeaking
-              ? "animate-pulse"
-              : "animate-fadeIn"
+            conversation.isSpeaking ? 'animate-pulse' : 'animate-fadeIn'
           }`}
         >
           Agent is {conversation.isSpeaking ? 'speaking' : 'listening'}

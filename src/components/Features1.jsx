@@ -33,7 +33,7 @@ export const Features1 = () => {
                 capabilities. Our solution enables professionals to monetize their
                 skills in real-time, allowing them to focus on improving their
                 skills, live happier and more purposeful lives while doing what
-                they love
+                they love - Upskilling
               </p>
               <ul className="mb-6 text-[#2CB67D] font-semibold">
                 <li className="mb-4 flex">

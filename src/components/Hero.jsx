@@ -44,7 +44,7 @@ export const Hero = () => {
             <h1 className="hidden md:inline">AI & IoT-Powered</h1>
           </div>
           <h1 className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-extrabold tracking-tight text-white px-8 sm:px-20 md:px-24 lg:px-24 drop-shadow-xl">
-            Startup
+            Manutech Startup
           </h1>
         </motion.div>
         <motion.div
@@ -53,7 +53,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         >
           <h2 className="text-white text-base lg:text-lg xl:text-xl sm:text-lg mt-10 px-12 sm:px-48 font-medium">
-            We are the next-gen digital innovation hub empowering Africa-focused STEM professionals and startups with smart technologies and tailored resources to unlock new revenue streams and drive sustainable growth
+            We are the next-gen digital innovation hub empowering Africa-focused STEM professionals and Manufacturing technology startups with smart technologies and tailored resources to unlock new revenue streams and drive sustainable growth
           </h2>
         </motion.div>
         <motion.div

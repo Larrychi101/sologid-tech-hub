@@ -14,12 +14,14 @@ const innovatorsEdgeData = [
 const igniteData = [
   "All Innovator's Edge benefits",
   "Microcontroller devkits for prototyping",
-  "Hands-on support for demos",
-  "Advanced technical resources",
+  "Hands-on support from mentors and Admins",
+  "Access to AI-powered simulation enviroment",
+  "Access to physical work and makers space",
+  "GTM and monetization strategies during the first 6 month",
 ];
 
 const accelerateData = [
-  "All Build benefits",
+  "All SoloTwin benefits",
   "Additional hardware for manufacturing",
   "Business development strategies",
   "Priority funding access",
@@ -118,7 +120,7 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="px-8 py-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-left">
-                    Build
+                    SoloTwin
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
@@ -141,7 +143,7 @@ export const Pricing = () => {
                   </ul>
                   <button
                     className="inline-block text-center py-2 px-4 w-full contained-button leading-loose transition duration-200 mt-20"
-                    onClick={() => handleGetStartedClick("https://appsource.microsoft.com/en-us/product/web-apps/sologidtechnologyhubltd1630072004403.solohub?tab=Overview")}
+                    onClick={() => handleGetStartedClick("https://open.spotify.com/episode/26BfEevFXF3dR1YMpCm93b?si=H_SkS3utRBCk-c9jWEIsaQ&context=spotify%3Ashow%3A3izz4pwVIm6ZIc5oHBmRLO")}
                     aria-label="Get started"
                   >
                     Get Started

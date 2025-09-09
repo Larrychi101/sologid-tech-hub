@@ -1,0 +1,9 @@
+name = "eleven-proxy"
+main = "workers/eleven-proxy/index.js"
+compatibility_date = "2025-09-08"
+# Optional: set your Cloudflare account ID to publish to your account
+# account_id = "cb4b122bccb123443f742b8795c87f0e"
+
+# Bindings (define worker secrets in dashboard or with `wrangler secret put`)
+# [[vars]]
+# name = "agent_01jz0e2bj6efea9t0pvajxdp79"

@@ -5,13 +5,12 @@ export function VoiceWidget() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div
-      className="fixed bottom-24 right-4 z-50" // Adjusted right spacing for better fit
-    >
+    // Ensure widget sits above everything and accepts clicks
+    <div className="fixed bottom-24 right-4 z-[9999] pointer-events-auto">
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          className="bg-primaryColor shadow-xl text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl hover:bg-primaryColorHover transition-all border-4 border-bgDark1"
+          className="bg-primaryColor shadow-xl text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl hover:bg-primaryColorHover transition-all border-4 border-bgDark1 pointer-events-auto"
           aria-label="Open voice call widget"
         >
           {/* SVG Call icon for a modern look */}
@@ -22,12 +21,12 @@ export function VoiceWidget() {
         </button>
       )}
       {open && (
-        <div className="relative bg-bgDark1 border border-primaryColor rounded-2xl shadow-2xl p-6 min-w-[320px] max-w-[90vw]">
+        <div className="relative bg-bgDark1 border border-primaryColor rounded-2xl shadow-2xl p-6 min-w-[320px] max-w-[90vw] pointer-events-auto">
           <div className="flex items-center justify-between mb-4">
             <span className="font-bold text-primaryColor text-lg">Voice Assistant</span>
             <button
               onClick={() => setOpen(false)}
-              className="text-2xl text-primaryColor hover:text-primaryColorHover transition"
+              className="text-2xl text-primaryColor hover:text-primaryColorHover transition pointer-events-auto"
               aria-label="Close voice call widget"
             >
               ×

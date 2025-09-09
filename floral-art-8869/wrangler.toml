@@ -1,0 +1,8 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "eleven-proxy"
+main = "workers/eleven-proxy/index.js"
+compatibility_date = "2025-09-09"
+workers_dev = true
+
+# Optional: add your Cloudflare account id to publish under that account
+# account_id = "cb4b122bccb123443f742b8795c87f0e"

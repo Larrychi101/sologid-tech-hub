@@ -5,8 +5,14 @@ import { useConversation } from '@elevenlabs/react';
 import { useCallback, useState } from 'react';
 
 
-// Set your deployed worker base URL here
+// Set your deployed worker base URL here (from .env or fallback)
 const WORKER_BASE = import.meta.env.PUBLIC_WORKER_URL || 'https://eleven-proxy.sologid-technology-hub.workers.dev';
+
+
+// REQUIRED: AGENT_ID configuration
+// Prefer environment variable, fallback to hardcoded value for quick development testing.
+// Replace 'your_real_agent_id' below with your actual agent ID for temporary hardcoded testing.
+const agentId = import.meta.env.PUBLIC_AGENT_ID || 'agent_01jz0e2bj6efea9t0pvajxdp79';
 
 
 export function Conversation() {
@@ -47,13 +53,22 @@ export function Conversation() {
         return;
       }
 
-      // Request a signed URL for private agents from the secure worker
-      const agentId = import.meta.env.PUBLIC_AGENT_ID;
-      appendLog(`requesting signed URL from ${WORKER_BASE}/api/eleven-proxy/signed-url?agentId=${agentId}`);
-      const res = await fetch(`${WORKER_BASE}/api/eleven-proxy/signed-url?agentId=${encodeURIComponent(agentId)}`, {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-      });
+      // Check agentId before making the call
+      if (!agentId || agentId === 'your_real_agent_id') {
+        appendLog('Error: PUBLIC_AGENT_ID is missing or uses a placeholder!');
+        setErrorMsg('Agent ID is not set. Check your environment variable PUBLIC_AGENT_ID or hardcode it.');
+        setLoading(false);
+        return;
+      }
+
+      appendLog(`requesting signed URL from ${WORKER_BASE}/api/eleven-proxy/signed-url?agentId=${agentId} (agentId: ${agentId})`);
+      const res = await fetch(
+        `${WORKER_BASE}/api/eleven-proxy/signed-url?agentId=${encodeURIComponent(agentId)}`,
+        {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
 
       appendLog(`signed-url response ${res.status}`);
       if (!res.ok) {

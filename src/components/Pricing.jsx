@@ -123,7 +123,7 @@ export const Pricing = () => {
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      {isMonthly ? "$498" : "$5,098"}
+                      {isMonthly ? "$420.5" : "$4,205"}
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}
@@ -156,7 +156,7 @@ export const Pricing = () => {
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      {isMonthly ? "$1,498" : "$17,098"}
+                      {isMonthly ? "$420.5" : "$4,205"}
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}

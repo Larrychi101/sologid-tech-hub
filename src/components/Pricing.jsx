@@ -22,10 +22,9 @@ const igniteData = [
 
 const accelerateData = [
   "All SoloTwin benefits",
-  "Additional hardware for manufacturing",
-  "Business development strategies",
-  "Priority funding access",
-  "Dedicated consulting sessions",
+  "Red-team-as-a-service",
+  "Vulnerability assessments and penetration testing",
+  "Priority hardware access",
 ];
 
 export const Pricing = () => {
@@ -131,7 +130,7 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    Unlock more features and elevate your startup experiences
+                    Unlock more features and elevate your ManuTech startup experiences
                   </p>
                   <ul className="mb-14 text-primaryText">
                     {igniteData.map((text, index) => (
@@ -153,7 +152,7 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Scale
+                    Solosec
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
@@ -164,7 +163,7 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our IOT Edge platform
+                    Explore red teaming and penetration testing to enhance your security posture
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-primaryText">
                     {accelerateData.map((text, index) => (
@@ -176,7 +175,7 @@ export const Pricing = () => {
                   </ul>
                   <button
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl contained-button font-bold leading-loose mt-16"
-                    onClick={() => handleGetStartedClick("https://appsource.microsoft.com/en-us/product/web-apps/sologidtechnologyhubltd1630072004403.solohub?tab=Overview")}
+                    onClick={() => handleGetStartedClick("https://open.spotify.com/episode/6VmcRtubSBg1Jm1SPdDj8b?si=2XEvAjZkRSmUqYEM8DaqjQ&context=spotify%3Ashow%3A3izz4pwVIm6ZIc5oHBmRLO")}
                     aria-label="Get started"
                   >
                     Get Started

@@ -18,11 +18,14 @@ const ALLOWED_ORIGINS = [
 function getCorsHeaders(request) {
   const origin = request.headers.get('Origin') || '';
   
-  // For development, allow all origins temporarily
+  // Check if the origin is in the allowed list
+  const isAllowedOrigin = ALLOWED_ORIGINS.includes(origin);
+  
   return {
-    'Access-Control-Allow-Origin': origin || '*',
+    'Access-Control-Allow-Origin': isAllowedOrigin ? origin : ALLOWED_ORIGINS[0],
     'Access-Control-Allow-Methods': 'GET,POST,OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, xi-api-key',
+    'Access-Control-Allow-Credentials': 'true',
   };
 }
 
